@@ -12,30 +12,84 @@
 
     <!-- Bootstrap and customised style -->
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .banner-image{
+            background-image: url('Image1.jpg');
+            background-size: cover;
+        }
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
 </head>
 <body id="page-top">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary text-uppercase fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light text-uppercase fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="#page-top">
-                <img src="VAPdétouré.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                Anh Phong VIRASSAMY</a>
+            <a class="navbar-brand text-white" href="#page-top">
+                <img id="logo" src="VAPdétouré.png" width="30" height="30" class="d-inline-block align-top" alt=""><b>
+                Anh Phong VIRASSAMY</b></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link px-0 px-lg-3 rounded" href="#">Présentation</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link px-0 px-lg-3 rounded" href="#">Formation</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link px-0 px-lg-3 rounded" href="#">Compétences</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link px-0 px-lg-3 rounded" href="#">Projets</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link px-0 px-lg-3 rounded" href="#">Contact</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link px-0 px-lg-3 rounded" href="#"><b>Présentation</b></a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link px-0 px-lg-3 rounded" href="#"><b>Formation</b></a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link px-0 px-lg-3 rounded" href="#"><b>Compétences</b></a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link px-0 px-lg-3 rounded" href="#"><b>Projets</b></a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link px-0 px-lg-3 rounded" href="#"><b>Contact</b></a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Banner Image -->
+    <div class="banner-image w-100 vh-100 d-flex Justify-content-center align-items-center">
+        <div class="mx-auto content align-middle text-center">
+            <h1 class="text-white"><strong class="text-secondary">Anh Phong </strong><strong>VIRASSAMY</strong></h1>
+            <hr style="height:1px;border:none;color:#333;background-color:#333;">
+            <p class="text-faded mb-5">Etudiant ISEP, passionné de programmation et de nouvelles technologies.</p>
+            <a class="btn btn-primary btn-xl" href="#about">Pour commencer</a>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div id="about" class="container my-5 d-grid gap-5">
+        <div class="p-5 border">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere venenatis lectus vel fermentum. Nunc et magna elit. Sed nec pretium quam. Integer justo felis, ornare faucibus maximus sit amet, interdum ut libero. Etiam maximus feugiat arcu, vitae rhoncus augue eleifend nec. Nullam laoreet tortor consectetur odio consequat gravida. Suspendisse quis libero vel magna ornare porta. Proin non turpis pellentesque, aliquet justo sit amet, bibendum justo. Fusce a eleifend lorem.</p>
+        </div>
+        <div class="p-5 border">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere venenatis lectus vel fermentum. Nunc et magna elit. Sed nec pretium quam. Integer justo felis, ornare faucibus maximus sit amet, interdum ut libero. Etiam maximus feugiat arcu, vitae rhoncus augue eleifend nec. Nullam laoreet tortor consectetur odio consequat gravida. Suspendisse quis libero vel magna ornare porta. Proin non turpis pellentesque, aliquet justo sit amet, bibendum justo. Fusce a eleifend lorem.</p>
+        </div>
+        <div class="p-5 border">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere venenatis lectus vel fermentum. Nunc et magna elit. Sed nec pretium quam. Integer justo felis, ornare faucibus maximus sit amet, interdum ut libero. Etiam maximus feugiat arcu, vitae rhoncus augue eleifend nec. Nullam laoreet tortor consectetur odio consequat gravida. Suspendisse quis libero vel magna ornare porta. Proin non turpis pellentesque, aliquet justo sit amet, bibendum justo. Fusce a eleifend lorem.</p>
+        </div>
+        <div class="p-5 border">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere venenatis lectus vel fermentum. Nunc et magna elit. Sed nec pretium quam. Integer justo felis, ornare faucibus maximus sit amet, interdum ut libero. Etiam maximus feugiat arcu, vitae rhoncus augue eleifend nec. Nullam laoreet tortor consectetur odio consequat gravida. Suspendisse quis libero vel magna ornare porta. Proin non turpis pellentesque, aliquet justo sit amet, bibendum justo. Fusce a eleifend lorem.</p>
+        </div>
+    </div>
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script>
+    var nav = document.querySelector('nav');
+    window.addEventListener('scroll', function () {
+        if(window.pageYOffset > 200){
+            nav.classList.add('bg-secondary', 'shadow');
+            nav.classList.replace('navbar-light','navbar-dark');
+        }
+        else {
+            nav.classList.remove('bg-secondary','shadow');
+            nav.classList.replace('navbar-dark','navbar-light');
+        }
+    });
+    </script>
 </body>
 </html>
