@@ -9,31 +9,17 @@
 
     <!-- Bootstrap and customised style -->
     <link rel="stylesheet" href="css/style.css" />
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        .banner-image{
-            background-image: url('Image1.jpg');
-            background-size: cover;
-        }
-        .centered {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-    </style>
+
 </head>
 <body id="page-top">
     <!-- Navbar -->
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light text-uppercase fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand text-white" href="#page-top">
-                <img id="logo" src="VAPdétouré.png" width="30" height="30" class="d-inline-block align-top" alt=""><b>
+                <img id="logo" src="img/VAPdétouré.png" width="30" height="30" class="d-inline-block align-top" alt=""><b>
                 Anh Phong VIRASSAMY</b></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-dark navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
@@ -58,39 +44,44 @@
     </div>
 
     <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
-        <!-- Main Content Area -->
-        <div class="container my-5 d-grid gap-5">
-            <div id="about" class="p-5 border">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere venenatis lectus vel fermentum. Nunc et magna elit. Sed nec pretium quam. Integer justo felis, ornare faucibus maximus sit amet, interdum ut libero. Etiam maximus feugiat arcu, vitae rhoncus augue eleifend nec. Nullam laoreet tortor consectetur odio consequat gravida. Suspendisse quis libero vel magna ornare porta. Proin non turpis pellentesque, aliquet justo sit amet, bibendum justo. Fusce a eleifend lorem.</p>
+        <!-- présentation -->
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-heading text-secondary">Présentation</h2>
+                        <hr class="gray my-4">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="align-left col-lg-4">
+                        <h2 class="text-secondary">Qui suis-je ?</h2>
+                        <p class="text-justify">
+                            Je suis étudiant à l'ISEP en première année du cycle ingénieur.
+                        <br><br>
+                            Je suis passionné de programmation et de nouvelles technologies. <br> J'aspire a devenir un ingénieur du numérique se spécialisant dans la sécurité numérique et réseau.
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="img/CV.jpg" class="img-fluid img-thumbnail">
+                    </div>
+                    <div class="align-left col-lg-4">
+                        <h2 class="text-secondary">Actuellement</h2>
+                        <p class="text-justify">
+                            Pour mes deux prochaine année en école d'ingénieur, je recherche un contrat de professionnalisation d'un an à compter de septembre 2021 dans la cybersécurité. Je souhaiterais évoluer dans ce domaine afin de menr à bien mon projet professionnel.
+                            <br><br>
+                            Si vous êtes intéressé, n'hésitez pas à <a href="img/CV.pdf">télécharger mon CV</a> et à me contacter !
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="p-5 border">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere venenatis lectus vel fermentum. Nunc et magna elit. Sed nec pretium quam. Integer justo felis, ornare faucibus maximus sit amet, interdum ut libero. Etiam maximus feugiat arcu, vitae rhoncus augue eleifend nec. Nullam laoreet tortor consectetur odio consequat gravida. Suspendisse quis libero vel magna ornare porta. Proin non turpis pellentesque, aliquet justo sit amet, bibendum justo. Fusce a eleifend lorem.</p>
-            </div>
-            <div class="p-5 border">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere venenatis lectus vel fermentum. Nunc et magna elit. Sed nec pretium quam. Integer justo felis, ornare faucibus maximus sit amet, interdum ut libero. Etiam maximus feugiat arcu, vitae rhoncus augue eleifend nec. Nullam laoreet tortor consectetur odio consequat gravida. Suspendisse quis libero vel magna ornare porta. Proin non turpis pellentesque, aliquet justo sit amet, bibendum justo. Fusce a eleifend lorem.</p>
-            </div>
-            <div id="contact" class="p-5 border">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere venenatis lectus vel fermentum. Nunc et magna elit. Sed nec pretium quam. Integer justo felis, ornare faucibus maximus sit amet, interdum ut libero. Etiam maximus feugiat arcu, vitae rhoncus augue eleifend nec. Nullam laoreet tortor consectetur odio consequat gravida. Suspendisse quis libero vel magna ornare porta. Proin non turpis pellentesque, aliquet justo sit amet, bibendum justo. Fusce a eleifend lorem.</p>
-            </div>
-        </div>
+        </section>
     </div>
 
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <!-- custom js -->
-    <script>
-    var nav = document.querySelector('nav');
-    window.addEventListener('scroll', function () {
-        if(window.pageYOffset > 200){
-            nav.classList.add('bg-secondary', 'shadow');
-            nav.classList.replace('navbar-light','navbar-dark');
-        }
-        else {
-            nav.classList.remove('bg-secondary','shadow');
-            nav.classList.replace('navbar-dark','navbar-light');
-        }
-    });
-    </script>
+    <script src="Script.js"></script>
 </body>
 </html>

@@ -9929,5 +9929,67 @@ h3 {
     border-color: #dee2e6;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
+.banner-image {
+  background-image: url("../img/Image2.png");
+  background-size: cover;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section {
+  padding: 5rem 0;
+}
+
+/* change navbar background */
+nav.navbar {
+  background: transparent;
+}
+
+/* change navbar-brand color */
+.navbar a.navbar-brand {
+  color: white;
+}
+
+/* change navbar-brand color on hover */
+.navbar a.navbar-brand:hover {
+  color: green;
+}
+
+/*  change navbar li colors, also active one but not disabled one */
+.navbar ul.navbar-nav li.nav-item a.nav-link {
+  color: white;
+}
+
+/* change navbar-toggler inside lines color (stroke) */
+.navbar-light span.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  color: white;
+}
+
+.navbar-dark span.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  color: white;
+}
+
+/* change hamburger button border color */
+button.navbar-toggler.navbar-toggler-right {
+  border-color: white;
+}
+
+/* change navbar background on collapse */
+@media (max-width: 768px) {
+  nav.navbar {
+    background: #2c3e50;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
