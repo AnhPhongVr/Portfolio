@@ -9953,6 +9953,29 @@ section {
   display: none;
 }
 
+.text-fourth {
+  color: #2c3e50;
+}
+
+.text-third {
+  color: white;
+}
+
+.bg-link {
+  background-color: #83ACA6;
+}
+
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 300px;
+}
+
+.btn-xl {
+  padding: 1rem 2rem;
+}
+
 /* change navbar background */
 nav.navbar {
   background: transparent;
@@ -9996,14 +10019,14 @@ button.navbar-toggler.navbar-toggler-right {
   }
 
   .text-third {
-    color: #117a8b;
+    color: #2c3e50;
   }
 
-  strong.text-secondary {
-    color: #117a8b;
+  .text-fourth {
+    color: #2c3e50;
   }
 }
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1440px) {
   .logoB {
     display: none;
   }
