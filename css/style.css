@@ -9949,6 +9949,10 @@ section {
   padding: 5rem 0;
 }
 
+.logoN {
+  display: none;
+}
+
 /* change navbar background */
 nav.navbar {
   background: transparent;
@@ -9989,6 +9993,23 @@ button.navbar-toggler.navbar-toggler-right {
 @media (max-width: 768px) {
   nav.navbar {
     background: #2c3e50;
+  }
+
+  .text-third {
+    color: #117a8b;
+  }
+
+  strong.text-secondary {
+    color: #117a8b;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .logoB {
+    display: none;
+  }
+
+  .logoN {
+    display: block;
   }
 }
 
