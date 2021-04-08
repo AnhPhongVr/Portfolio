@@ -9987,6 +9987,112 @@ p {
   font-size: large;
 }
 
+.bg-gray {
+  background-color: #E6E6E6;
+}
+
+/*skill*/
+.our-team-main {
+  width: 100%;
+  height: 300px;
+  border-bottom: 5px #323233 solid;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s;
+  margin-bottom: 28px;
+}
+
+.our-team-main img {
+  width: 2.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.our-team-main h4 {
+  font-size: 2px;
+  font-weight: 700;
+}
+
+.our-team-main p {
+  margin-bottom: 0;
+}
+
+.team-back {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px 15px 0 15px;
+  text-align: left;
+  background: #E6E6E6;
+}
+
+.team-front {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  z-index: 10;
+  background: #E6E6E6;
+  padding: 15px;
+  bottom: 0px;
+  transition: all 0.5s ease;
+}
+
+.our-team-main:hover .team-front {
+  bottom: -300px;
+  transition: all 0.5s ease;
+}
+
+.our-team-main:hover {
+  border-color: #777;
+  transition: 0.5s;
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+}
+
+.skill-header i {
+  font-size: 4.5em;
+}
+
+.skill-header h3 {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.skill-body {
+  display: flex;
+  flex-wrap: wrap;
+  cursor: context-menu;
+}
+
+.skill-element {
+  display: flex;
+  flex: 0 0 25%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.7rem;
+}
+
+.skill-body img {
+  width: 2.5rem;
+  margin-bottom: 0.9rem;
+  transition: 0.5s;
+}
+
+.skill-body p {
+  margin: 0 0.5rem;
+  font-size: 0.9rem;
+}
+
 /* change navbar background */
 nav.navbar {
   background: transparent;
