@@ -109,7 +109,7 @@
             </div>
             <div class="row my-4" >
                 <div class="col-lg-3 p-2">
-                    <img src="img/ISEP.svg" class="img-fluid img-round">
+                    <a href="https://www.isep.fr/"><img src="img/ISEP.svg" class="img-fluid img-round"></a>
                 </div>
                 <div class="col-lg-6 mx-5">
                     <p class="align-middle">
@@ -121,7 +121,7 @@
             </div>
             <div class="row my-4">
                 <div class="col-lg-3 p-2">
-                    <img src="img/ENCPB.jpg" class="img-fluid img-round">
+                    <a href="https://pirandello.org/"><img src="img/ENCPB.jpg" class="img-fluid img-round"></a>
                 </div>
                 <div class="col-lg-6 mx-5">
                         <p class="align-middle">
@@ -131,9 +131,15 @@
                         </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-8 my-4">
-                    <p><strong>Obtention du Baccalauréat Scientifique option mathématique (2018)</strong></p>
+            <div class="row my-4">
+                <div class="col-lg-3 p-2">
+                </div>
+                <div class="col-lg-6 mx-5">
+                    <p class="align-middle">
+                        <a href="https://www.lyceerondeau.eu/"><strong class="text-secondary">Lycée Maurice Rondeau</strong></a>
+                        <br><br>
+                        Baccalauréat Scientifique option mathématique (2018)
+                    </p>
                 </div>
             </div>
         </div>
@@ -507,48 +513,54 @@
             </div>
                 <!--grid item-->
             <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- 1st item -->
                 <div class="col">
-                    <div class="card my-4">
+                    <div class="card my-4 cursorModal" data-bs-toggle="modal" data-bs-target="#portfolioModal">
                         <img src="img/portfolio.png" class="card-img-top" alt="portfolio" style="height: 200px;">
                         <div class="card-body">
                             <h5 class="card-title">Portfolio</h5>
                         </div>
                     </div>
                 </div>
+                <!-- 2nd item -->
                 <div class="col">
-                    <div class="card my-4">
+                    <div class="card my-4 cursorModal" data-bs-toggle="modal" data-bs-target="#appModal">
                         <img src="img/APP.png" class="card-img-top" alt="APP" style="height: 200px;">
                         <div class="card-body">
                             <h5 class="card-title">Conception d'un appareil de mesures Psychotechniques</h5>
                         </div>
                     </div>
                 </div>
+                <!-- 3rd item -->
                 <div class="col">
-                    <div class="card my-4">
+                    <div class="card my-4 cursorModal" data-bs-toggle="modal" data-bs-target="#unityModal">
                         <img src="img/unitygame.png" class="card-img-top" alt="unitygame" style="height: 200px;">
                         <div class="card-body">
                             <h5 class="card-title">Conception d'un jeu sur Unity</h5>
                         </div>
                     </div>
                 </div>
+                <!-- 4th item -->
                 <div class="col">
-                    <div class="card my-4">
+                    <div class="card my-4 cursorModal" data-bs-toggle="modal" data-bs-target="#javaModal">
                         <img src="img/jack.png" class="card-img-top" alt="Jack" style="height: 200px;">
                         <div class="card-body">
-                            <h5 class="card-title">Programmation d'un jeu de Plateau</h5>
+                            <h5 class="card-title">Programmation d'un jeu de Plateau en JAVA</h5>
                         </div>
                     </div>
                 </div>
+                <!-- 5th item -->
                 <div class="col">
-                    <div class="card my-4">
+                    <div class="card my-4 cursorModal" data-bs-toggle="modal" data-bs-target="#simuModal">
                         <img src="img/chute.png" class="card-img-top" alt="chute" style="height: 200px;">
                         <div class="card-body">
                             <h5 class="card-title">Programmation d'une simulation d'une chute d'un objet</h5>
                         </div>
                     </div>
                 </div>
+                <!-- 6th item -->
                 <div class="col">
-                    <div class="card my-4">
+                    <div class="card my-4 cursorModal" data-bs-toggle="modal" data-bs-target="#flyboardModal">
                         <img src="img/flyboard.png" class="card-img-top" alt="flyboard" style="height: 200px;">
                         <div class="card-body">
                             <h5 class="card-title">Etudes TIPE sur le Flyboard</h5>
@@ -558,7 +570,7 @@
             </div>
         </div>
     </section>
-    <!--contact -->
+    <!-- contact -->
     <section id="contact" class="bg-gray">
         <div class="container">
             <div class="row">
@@ -575,7 +587,7 @@
                 <div class="col-lg-4 mr-auto text-center">
                     <i class="fas fa-envelope fa-3x mb-3 sr-icon-2 text-purple"></i>
                     <p>
-                        <a href="mailto:anhphong.virassamy@eleve.isep.fr">anhphong.virassamy@eleve.isep.fr</a>
+                        <a href="mailto:anh-phong.virassamy@eleve.isep.fr">anh-phong.virassamy@eleve.isep.fr</a>
                     </p>
                 </div>
                 <div class="col-lg-4 mr-auto text-center">
@@ -587,6 +599,93 @@
             </div>
         </div>
     </section>
+    <!-- Modal -->
+    <div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Portfolio</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal"><span aria-hidden="true" class="modal_button">&times;</span><span class="sr-only">Close</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div id="portfolio" class="carousel slide" data-bs-ride="carousel">
+
+                                    <ul class="carousel-indicators">
+                                        <li data-bs-target="#portfolio" data-bs-slide-to="0" class="active"></li>
+                                        <li data-bs-target="#portfolio" data-bs-slide-to="1"></li>
+                                        <li data-bs-target="#portfolio" data-bs-slide-to="2"></li>
+                                    </ul>
+
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="img/portfolio.png" class="d-block w-100" alt="portfolio">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/portfolio1.png" class="d-block w-100" alt="portfolio1">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/portfolio2.png" class="d-block w-100" alt="portfolio2">
+                                        </div>
+                                    </div>
+
+                                    <a class="carousel-control-prev" href="#portfolio" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#portfolio" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </a>
+                                </div>
+                                <hr class="gray my-4">
+                            </div>
+                            <div class="col-xl-6">
+                                <h3>Informations</h3>
+                                <table class="project-table">
+                                    <tr>
+                                        <td>Cadre</td>
+                                        <td>Projet personnel</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Date</td>
+                                        <td>01/04/2021 - 13/04/2021</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Durée</td>
+                                        <td>~50h</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Participants au projet</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rôle</td>
+                                        <td>Développeur</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Langages utilisés</td>
+                                        <td>HTML / CSS / JavaScript / Sass</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Frameworks utilisés</td>
+                                        <td>Bootstrap</td>
+                                    </tr>
+                                </table>
+                                <h3 class="my-4">Description</h3>
+                                <p class="text-justify">Je suis amené dans le cadre de mes études à trouver une alternance. J'ai eu l'idée de réaliser mon portfolio afin de pouvoir étailler plus en détails mes compétences et mes projets réalisés.<br><br>
+                                    La création de mon portfolio m'a permis de mettre en pratique mes coours de (HTML/CSS,JavaScript). Durant la conception de mon portfolio, j'ai travaillé en localhost en utilisant le logiciel MAMP et j'en ai fait un repository github public. Aujourd'hui mon portfolio est hébergé par netlify, avec netlify j'ai pu construire mon portfolio seulement en mettant a jour mon repository github.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <!-- custom js -->
