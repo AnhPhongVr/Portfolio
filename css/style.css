@@ -10189,5 +10189,8 @@ button.navbar-toggler.navbar-toggler-right {
     display: block;
   }
 }
+.carousel-item {
+  transition: transform 1s ease-in-out;
+}
 
 /*# sourceMappingURL=style.css.map */
