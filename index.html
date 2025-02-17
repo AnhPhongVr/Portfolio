@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Portfolio Anh Phong VIRASSAMY - Etudiant ISEP</title>
+    <title>Portfolio Anh Phong VIRASSAMY</title>
 
     <!-- font google -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -36,11 +36,20 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul id="mainNav" class="navbar-nav ml-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link px-0 px-lg-3" href="#about"><b>Présentation</b></a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link px-0 px-lg-3" href="#formation"><b>Formation</b></a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link px-0 px-lg-3" href="#skills"><b>Compétences</b></a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link px-0 px-lg-3" href="#projects"><b>Projets</b></a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link px-0 px-lg-3" href="#contact"><b>Contact</b></a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link px-0 px-lg-3" href="#about" data-lang="navbar-about"><b>Présentation</b></a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link px-0 px-lg-3" href="#formation" data-lang="navbar-formation"><b>Formation</b></a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link px-0 px-lg-3" href="#skills" data-lang="navbar-skills"><b>Compétences</b></a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link px-0 px-lg-3" href="#projects" data-lang="navbar-projects"><b>Projets</b></a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link px-0 px-lg-3" href="#contact" data-lang="navbar-contact"><b>Contact</b></a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link px-0 px-lg-3" href="#language"><div id="languageSelector">
+                        <button data-lang="fr" onclick="changeLanguage('fr')">
+                            <img src="path/to/french-flag.png" alt="Français" width="30" height="20">
+                        </button>
+                        <button data-lang="en" onclick="changeLanguage('en')">
+                            <img src="path/to/english-flag.png" alt="English" width="30" height="20">
+                        </button>
+                    </div>
+                    </a></li>
                 </ul>
             </div>
         </div>
@@ -51,8 +60,8 @@
         <div class="mx-auto content align-middle text-center">
             <h1><strong class="text-fourth">Anh Phong </strong><strong class="text-third">VIRASSAMY</strong></h1>
             <hr style="height:1px;border:none;color:#333;background-color:#333;">
-            <p class="text-faded mb-5 px-1">Passionné de programmation et de nouvelles technologies.</p>
-            <a class="btn btn-primary btn-xl btn-lg" href="#about">Pour commencer</a>
+            <p class="text-faded mb-5 px-1" data-lang="banner-description">Passionné de programmation et de nouvelles technologies.</p>
+            <a class="btn btn-primary btn-xl btn-lg" href="#about" data-lang="banner-button">Pour commencer</a>
         </div>
     </div>
 
@@ -61,17 +70,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="text-secondary">Présentation</h2>
+                    <h2 class="text-secondary" data-lang="about-title">Présentation</h2>
                     <hr class="gray my-4">
                 </div>
             </div>
             <div class="row">
                 <div class="align-left col-lg-4">
-                    <h2 class="text-secondary">Qui suis-je ?</h2>
+                    <h2 class="text-secondary" data-lang="about-who">Qui suis-je ?</h2>
                     <p class="text-justify">
-                        Ingénieur du Numérique - Spécialisé en sécurité numérique et réseaux.
+                        <span data-lang="about-description">
+                            Ingénieur du Numérique - Spécialisé en sécurité numérique et réseaux.
+                        </span>
                         <br><br>
-                        Je suis passionné de programmation et de nouvelles technologies. (IA Generative, LLM, VR, Securité)<br>
+                        <span data-lang="about-passion">
+                            Je suis passionné de programmation et de nouvelles technologies. (IA Generative, LLM, VR, Securité)
+                        </span><br>
                     </p>
                 </div>
                 <div class="col-lg-4">
@@ -80,7 +93,9 @@
                 <div class="align-left col-lg-4">
                     <h2 class="text-secondary"></h2>
                     <p class="text-justify">
-                        Si vous êtes intéressé par mon profil, n'hésitez pas à <a href="img/CV.pdf">télécharger mon CV</a> et à me contacter !
+                        <span data-lang="about-cv-text">Si vous êtes intéressé par mon profil, n'hésitez pas à</span>
+                        <a href="img/CV.pdf" data-lang="about-cv-link">télécharger mon CV</a>
+                        <span data-lang="about-cv-end">et à me contacter !</span>
                     </p>
                 </div>
             </div>

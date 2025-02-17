@@ -1,0 +1,36 @@
+{
+    "fr": {
+        "navbar-about": "Présentation",
+        "navbar-formation": "Formation",
+        "navbar-skills": "Compétences",
+        "navbar-projects": "Projets",
+        "navbar-contact": "Contact",
+        "banner-description": "Passionné de programmation et de nouvelles technologies.",
+        "banner-button": "Pour commencer",
+        "about-title": "Présentation",
+        "about-who": "Qui suis-je ?",
+        "about-description": "Ingénieur du Numérique - Spécialisé en sécurité numérique et réseaux.",
+        "about-passion": "Je suis passionné de programmation et de nouvelles technologies.",
+        "about-cv-text": "Si vous êtes intéressé par mon profil, n'hésitez pas à",
+        "about-cv-link": "télécharger mon CV",
+        "about-cv-end": "et à me contacter !",
+        "end": "fin"
+    },
+    "en": {
+        "navbar-about": "About",
+        "navbar-formation": "Formation",
+        "navbar-skills": "Skills",
+        "navbar-projects": "Projects",
+        "navbar-contact": "Contact",
+        "banner-description": "Passionate about programming and new technologies.",
+        "banner-button": "Get Started",
+        "about-title": "About Me",
+        "about-who": "Who am i ?",
+        "about-description": "Digital Engineer - Specialized in cybersecurity and networks.",
+        "about-passion": "I am passionate about programming and new technologies.",
+        "about-cv-text": "If you are interested in my profile, please do not hesitate to",
+        "about-cv-link": "download my resume",
+        "about-cv-end": "and contact me!",
+        "end": "end"
+    }
+}
