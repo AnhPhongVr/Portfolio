@@ -41,15 +41,16 @@
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link px-0 px-lg-3" href="#skills" data-lang="navbar-skills"><b>Compétences</b></a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link px-0 px-lg-3" href="#projects" data-lang="navbar-projects"><b>Projets</b></a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link px-0 px-lg-3" href="#contact" data-lang="navbar-contact"><b>Contact</b></a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link px-0 px-lg-3" href="#language"><div id="languageSelector">
-                        <button data-lang="fr" onclick="changeLanguage('fr')">
-                            <img src="path/to/french-flag.png" alt="Français" width="30" height="20">
-                        </button>
-                        <button data-lang="en" onclick="changeLanguage('en')">
-                            <img src="path/to/english-flag.png" alt="English" width="30" height="20">
-                        </button>
-                    </div>
-                    </a></li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <div id="languageSelector">
+                            <button class="btn btn-outline-success" data-lang="fr" onclick="changeLanguage('fr')">
+                                <img src="img/france-flag.png" alt="Français" width="30" height="20">
+                            </button>
+                            <button class="btn btn-outline-success" data-lang="en" onclick="changeLanguage('en')">
+                                <img src="img/united-kingdom-flag.png" " alt="English" width="30" height="20">
+                            </button>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -106,13 +107,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 text-center my-4">
-                    <a href="https://github.com/AnhPhongVr" class="btn btn-light btn-lg" role="button" aria-pressed="true" target="_blank">Voir mon profil Github</a>
+                    <a href="https://github.com/AnhPhongVr" class="btn btn-light btn-lg" role="button" aria-pressed="true" target="_blank" data-lang="link-github" >Voir mon profil Github</a>
                 </div>
                 <div class="col-lg-6 text-center my-4">
-                    <a href="https://www.linkedin.com/in/anhphongvirassamy/" class="btn btn-light btn-lg" role="button" aria-pressed="true" target="_blank">Voir mon profil Linkedin</a>
+                    <a href="https://www.linkedin.com/in/anhphongvirassamy/" class="btn btn-light btn-lg" role="button" aria-pressed="true" target="_blank" data-lang="link-linkedin">Voir mon profil Linkedin</a>
                 </div>
             </div>
-
         </div>
     </section>
     <!-- formation -->
@@ -120,7 +120,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="text-secondary">Formation & Diplômes</h2>
+                    <h2 class="text-secondary" data-lang="formation-title">Formation & Diplômes</h2>
                     <hr class="gray my-4">
                 </div>
             </div>
@@ -130,10 +130,11 @@
                 </div>
                 <div class="col-lg-6 mx-5">
                     <p class="align-middle">
-                        <a href="https://www.isep.fr/"><strong class="text-secondary">Ecole d'ingénieur du numérique - ISEP (2020 - 2023)</strong></a>
+                        <a href="https://www.isep.fr/" data-lang="formation-ISEP" ><strong class="text-secondary" >Ecole d'ingénieur du numérique - ISEP (2020 - 2023)</strong></a>
                         <br><br>
-                        Parcours Sécurité Numérique et Réseaux, Cursus fait en Apprentissage.
-
+                            <span data-lang="formation-ISEP-description">
+                                Parcours Sécurité Numérique et Réseaux, Cursus fait en Apprentissage.
+                            </span>
                     </p>
                 </div>
             </div>
@@ -143,9 +144,11 @@
                 </div>
                 <div class="col-lg-6 mx-5">
                     <p class="align-middle">
-                        <a href="https://pirandello.org/"><strong class="text-secondary">Lycée Pierre-Gilles de Gennes - ENCPB (2018 - 2020)</strong></a>
+                        <a href="https://pirandello.org/" data-lang="formation-Prepa"><strong class="text-secondary">Lycée Pierre-Gilles de Gennes - ENCPB (2018 - 2020)</strong></a>
                         <br><br>
-                        Classe Préparatoire aux Grandes Ecoles - PCSI/PSI
+                            <span data-lang="formation-Prepa-description">
+                                Classe Préparatoire aux Grandes Ecoles - PCSI/PSI
+                            </span>
                     </p>
                 </div>
             </div>
@@ -154,9 +157,11 @@
                 </div>
                 <div class="col-lg-6 mx-5">
                     <p class="align-middle">
-                        <a href="https://www.lyceerondeau.eu/"><strong class="text-secondary">Lycée Maurice Rondeau</strong></a>
+                        <a href="https://www.lyceerondeau.eu/" data-lang="formation-lycee"><strong class="text-secondary">Lycée Maurice Rondeau</strong></a>
                         <br><br>
-                        Baccalauréat Scientifique option mathématique (2018)
+                            <span data-lang="formation-lycee-description">
+                                Baccalauréat Scientifique option mathématique (2018)
+                            </span>
                     </p>
                 </div>
             </div>
@@ -167,7 +172,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="text-secondary">Compétences</h2>
+                    <h2 class="text-secondary" data-lang="skills-title">Compétences</h2>
                     <hr class="gray my-4">
                 </div>
             </div>
@@ -180,7 +185,7 @@
                         <!-- on screen -->
                         <div class="team-front">
                             <div class="skill-header">
-                                <h3 class="mb-3">Développement Logiciel</h3>
+                                <h3 class="mb-3" data-lang="skill-software">Développement Logiciel</h3>
                             </div>
                             <div class="skill-body">
                                 <div class="skill-element">
@@ -259,7 +264,7 @@
                         <!-- on screen -->
                         <div class="team-front">
                             <div class="skill-header">
-                                <h3 class="mb-3">Développement Web </h3>
+                                <h3 class="mb-3" data-lang="skills-Web">Développement Web </h3>
                             </div>
                             <div class="skill-body">
                                 <div class="skill-element">
@@ -314,7 +319,7 @@
                         <!-- on screen -->
                         <div class="team-front">
                             <div class="skill-header">
-                                <h3 class="mb-3">Bases de données</h3>
+                                <h3 class="mb-3" data-lang="skills-database">Bases de données</h3>
                             </div>
                             <div class="skill-body">
                                 <div class="skill-element">
@@ -353,7 +358,7 @@
                         <!-- on screen -->
                         <div class="team-front">
                             <div class="skill-header">
-                                <h3 class="mb-3">Outils</h3>
+                                <h3 class="mb-3" data-lang="skills-tools">Outils</h3>
                             </div>
                             <div class="skill-body">
                                 <div class="skill-element">
@@ -404,53 +409,53 @@
 
                 <!-- outils calcul -->
                 <!--
-                <div class="col-lg-4">
-                    <div class="our-team-main">
-                        <!-- on screen -->
+    <div class="col-lg-4">
+        <div class="our-team-main">
+            <!-- on screen -->
                 <!--
-                <div class="team-front">
-                    <div class="skill-header">
-                        <h3 class="mb-3">Outils calculs</h3>
-                    </div>
-                    <div class="skill-body">
-                        <div class="skill-element">
-                            <img src="img/matlab.png"/>
-                            <p class="text-muted mb-0">MATLAB</p>
-                        </div>
-                        <div class="skill-element">
-                            <img src="img/R.png"/>
-                            <p class="text-muted mb-0">R</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- hover -->
+    <div class="team-front">
+        <div class="skill-header">
+            <h3 class="mb-3">Outils calculs</h3>
+        </div>
+        <div class="skill-body">
+            <div class="skill-element">
+                <img src="img/matlab.png"/>
+                <p class="text-muted mb-0">MATLAB</p>
+            </div>
+            <div class="skill-element">
+                <img src="img/R.png"/>
+                <p class="text-muted mb-0">R</p>
+            </div>
+        </div>
+    </div>
+    <!-- hover -->
                 <!--
-                        <div class="team-back">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col">
-                                        <span>MATLAB</span>
-                                        <div class="progress ">
-                                            <div class="progress-bar" role="progressbar" style="width: 70%; background: #FF9400;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-                                        </div>
-                                        <span>R</span>
-                                        <div class="progress ">
-                                            <div class="progress-bar" role="progressbar" style="width: 30%; background: #2167BA;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
-                                        </div>
-                                    </div>
-                                </div>
+            <div class="team-back">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <span>MATLAB</span>
+                            <div class="progress ">
+                                <div class="progress-bar" role="progressbar" style="width: 70%; background: #FF9400;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                            </div>
+                            <span>R</span>
+                            <div class="progress ">
+                                <div class="progress-bar" role="progressbar" style="width: 30%; background: #2167BA;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                -->
+            </div>
+        </div>
+    </div>
+    -->
                 <!-- Gestion de projet -->
                 <div class="col-lg-4">
                     <div class="our-team-main">
                         <!-- on screen -->
                         <div class="team-front">
                             <div class="skill-header">
-                                <h3 class="mb-3">Gestions de Projet</h3>
+                                <h3 class="mb-3" data-lang="skills-management">Gestions de Projet</h3>
                             </div>
                             <div class="skill-body">
                                 <div class="skill-element">
@@ -485,28 +490,28 @@
                         <!-- on screen -->
                         <div class="team-front">
                             <div class="skill-header">
-                                <h3 class="mb-3">Langues</h3>
+                                <h3 class="mb-3" data-lang="skills-language">Langues</h3>
                             </div>
                             <div class="skill-body">
                                 <div class="skill-element">
                                     <img src="img/france.png" />
-                                    <p class="text-muted mb-0">Français<br>Maternelle</p>
+                                    <p class="text-muted mb-0" data-lang="skills-french">Français<br><span data-lang="skills-french-description">Maternelle</span></p>
                                 </div>
                                 <div class="skill-element">
                                     <img src="img/united-kingdom.png" />
-                                    <p class="text-muted mb-0">Anglais<br>TOEIC 915 points</p>
+                                    <p class="text-muted mb-0" data-lang="skills-english">Anglais<br><span data-lang="skills-english-description">TOEIC 915 points </span></p>
                                 </div>
                                 <div class="skill-element">
                                     <img src="img/japan.png" />
-                                    <p class="text-muted mb-0">Japonais<br>Connaissance élémentaire</p>
+                                    <p class="text-muted mb-0" data-lang="skills-jp">Japonais<br><span data-lang="skills-jp-description">Connaissance élémentaire</span></p>
                                 </div>
                             </div>
                         </div>
                         <!-- hover -->
                         <div class="team-back">
-                            <h5> Vietnamien </h5>
-                            <li>
-                                Je suis d'origine Vietnamienne mais ma connaissance de la langue est limité.
+                            <h5 data-lang="skills-vn-title"> Vietnamien </h5>
+                            <li data-lang="skills-vn-description">
+                                Je comprends et parle un peu vietnamien, mais seulement dans un contexte familial.
                             </li>
                             <br />
                         </div>
@@ -520,15 +525,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="text-secondary">Projets</h2>
+                    <h2 class="text-secondary" data-lang="projects-title">Projets</h2>
                     <hr class="gray my-4">
                 </div>
             </div>
             <div class="row">
-                <p class="col text-center">
-                    Ces différents projets montrent mon intérêt et ma curiosité pour les sujets liés à l'informatique.<br>
-                    Les projets ci-dessous ont été réalisés dans le cadre de mes études ou de ma propre initiative. <br>
-                    Je diffuserai très prochainement d'autre projets en cours. (n'hésitez pas à cliquer sur les différentes cases afin d'avoir plus de détails)
+                <p class="col text-center" >
+                    <span data-lang="projects-description">Ces différents projets montrent mon intérêt et ma curiosité pour les sujets liés à l'informatique.</span>
+                    <br>
+                    <span data-lang="projects-description-2">Les projets ci-dessous ont été réalisés dans le cadre de mes études ou de ma propre initiative.</span>
+                    <br>
+                    <span data-lang="projects-description-3">Je diffuserai très prochainement d'autre projets en cours. (n'hésitez pas à cliquer sur les différentes cases afin d'avoir plus de détails)</span>
                 </p>
             </div>
             <!--grid item-->
@@ -571,7 +578,7 @@
                     <div class="card my-4 cursorModal" data-bs-toggle="modal" data-bs-target="#appModal">
                         <img src="img/APP.png" class="card-img-top" alt="APP" style="height: 200px;">
                         <div class="card-body">
-                            <h5 class="card-title">Conception d'un appareil de mesures Psychotechniques</h5>
+                            <h5 class="card-title" data-lang="projects-heartbeat">Conception d'un appareil de mesures Psychotechniques</h5>
                         </div>
                     </div>
                 </div>
@@ -580,7 +587,7 @@
                     <div class="card my-4 cursorModal" data-bs-toggle="modal" data-bs-target="#unityModal">
                         <img src="img/unitygame.png" class="card-img-top" alt="unitygame" style="height: 200px;">
                         <div class="card-body">
-                            <h5 class="card-title">Conception d'un jeu sur Unity</h5>
+                            <h5 class="card-title" data-lang="projects-unity">Conception d'un jeu sur Unity</h5>
                         </div>
                     </div>
                 </div>
@@ -589,7 +596,7 @@
                     <div class="card my-4 cursorModal" data-bs-toggle="modal" data-bs-target="#javaModal">
                         <img src="img/jack.png" class="card-img-top" alt="Jack" style="height: 200px;">
                         <div class="card-body">
-                            <h5 class="card-title">Programmation d'un jeu de Plateau en JAVA</h5>
+                            <h5 class="card-title" data-lang="projects-Java">Programmation d'un jeu de Plateau en JAVA</h5>
                         </div>
                     </div>
                 </div>
@@ -598,7 +605,7 @@
                     <div class="card my-4 cursorModal" data-bs-toggle="modal" data-bs-target="#simuModal">
                         <img src="img/chute.png" class="card-img-top" alt="chute" style="height: 200px;">
                         <div class="card-body">
-                            <h5 class="card-title">Programmation d'une simulation d'une chute d'un objet</h5>
+                            <h5 class="card-title" data-lang="projects-fall">Programmation d'une simulation d'une chute d'un objet</h5>
                         </div>
                     </div>
                 </div>
@@ -607,7 +614,7 @@
                     <div class="card my-4 cursorModal" data-bs-toggle="modal" data-bs-target="#flyboardModal">
                         <img src="img/flyboard.png" class="card-img-top" alt="flyboard" style="height: 200px;">
                         <div class="card-body">
-                            <h5 class="card-title">Etudes TIPE sur le Flyboard</h5>
+                            <h5 class="card-title" data-lang="projects-TIPE">Etudes TIPE sur le Flyboard</h5>
                         </div>
                     </div>
                 </div>
@@ -626,18 +633,18 @@
             <div class="row">
                 <div class="col-lg-4 ml-auto text-center">
                     <i class="fas fa-phone fa-3x mb-3 sr-icon-1 text-purple"></i>
-                    <p>07.82.12.64.62</p>
+                    <p>+33 7 82 12 64 62</p>
                 </div>
                 <div class="col-lg-4 mr-auto text-center">
                     <i class="fas fa-envelope fa-3x mb-3 sr-icon-2 text-purple"></i>
                     <p>
-                        <a href="mailto:anh-phong.virassamy@eleve.isep.fr">anh-phong.virassamy@eleve.isep.fr</a>
+                        <a href="mailto:anhphong.virassamy@gmail.com">anh-phong.virassamy@eleve.isep.fr</a>
                     </p>
                 </div>
                 <div class="col-lg-4 mr-auto text-center">
                     <i class="fas fa-file-pdf fa-3x mb-3 sr-icon-3 text-purple"></i>
                     <p>
-                        <a href="img/CV.pdf" target="_blank">Mon CV</a>
+                        <a href="img/CV.pdf" target="_blank" data-lang="cv-link" >Mon CV</a>
                     </p>
                 </div>
             </div>
@@ -695,41 +702,42 @@
                                 <hr class="gray my-4">
                             </div>
                             <div class="col-xl-6">
-                                <h3>Informations</h3>
+                                <h3 data-lang="project-information">Informations</h3>
                                 <table class="project-table">
                                     <tr>
-                                        <td>Cadre</td>
-                                        <td>Projet Scolaire</td>
+                                        <td data-lang="project-context">Cadre</td>
+                                        <td data-lang="project-school">Projet Scolaire</td>
                                     </tr>
                                     <tr>
-                                        <td>Date</td>
+                                        <td>Date (dd/mm/aaaa)</td>
                                         <td>03/10/2022 - 16/12/2022</td>
                                     </tr>
                                     <tr>
-                                        <td>Durée</td>
+                                        <td data-lang="project-duration">Durée</td>
                                         <td>~200h</td>
                                     </tr>
                                     <tr>
-                                        <td>Participants au projet</td>
+                                        <td data-lang="project-participants">Participants au projet</td>
                                         <td>4</td>
                                     </tr>
                                     <tr>
-                                        <td>Rôle</td>
-                                        <td>Configurateur</td>
+                                        <td data-lang="project-responsibility">Rôle</td>
+                                        <td data-lang="project-IDS-responsibility">Analyste Sécurité</td>
                                     </tr>
                                     <tr>
-                                        <td>Langages utilisés</td>
-                                        <td>Aucun</td>
+                                        <td data-lang="project-languages">Langages utilisés</td>
+                                        <td data-lang="project-none">Aucun</td>
                                     </tr>
                                     <tr>
-                                        <td>Frameworks utilisés</td>
+                                        <td data-lang="project-os">OS / Outils</td>
                                         <td>VirtualBox, Ubuntu, Kali</td>
                                     </tr>
                                 </table>
                                 <h3 class="my-4">Description</h3>
                                 <p class="text-justify">
-                                    Projet scolaire : recherche sur les systèmes de détection d'intrusion (IDS).<br><br>
-                                    Pour une présentation exhaustive du sujet, j'ai opté pour le déploiement d'un IDS en utilisant SNORT et OSSEC. Ces derniers ont été installés sur une machine virtuelle Linux. Ensuite, à l'aide d'une autre machine virtuelle (Kali), j'ai procédé à des tests pour évaluer la capacité du système à détecter les intrusions.".
+                                    <span data-lang="project-IDS-description">Projet scolaire : recherche sur les systèmes de détection d'intrusion (IDS).</span>
+                                    <br><br>
+                                    <span data-lang="project-IDS-description-2">Pour une présentation exhaustive du sujet, j'ai opté pour le déploiement d'un IDS en utilisant SNORT et OSSEC. Ces derniers ont été installés sur une machine virtuelle Linux. Ensuite, à l'aide d'une autre machine virtuelle (Kali), j'ai procédé à des tests pour évaluer la capacité du système à détecter les intrusions.</span>
                                 </p>
                             </div>
                         </div>
@@ -778,41 +786,42 @@
                                 <hr class="gray my-4">
                             </div>
                             <div class="col-xl-6">
-                                <h3>Informations</h3>
+                                <h3 data-lang="project-information">Informations</h3>
                                 <table class="project-table">
                                     <tr>
-                                        <td>Cadre</td>
-                                        <td>Projet Scolaire</td>
+                                        <td data-lang="project-context">Cadre</td>
+                                        <td data-lang="project-school">Projet Scolaire</td>
                                     </tr>
                                     <tr>
-                                        <td>Date</td>
+                                        <td>Date (dd/mm/aaaa)</td>
                                         <td>01/02/2023 - 26/04/2023</td>
                                     </tr>
                                     <tr>
-                                        <td>Durée</td>
+                                        <td data-lang="project-duration">Durée</td>
                                         <td>~200h</td>
                                     </tr>
                                     <tr>
-                                        <td>Participants au projet</td>
+                                        <td data-lang="project-participants">Participants au projet</td>
                                         <td>4</td>
                                     </tr>
                                     <tr>
-                                        <td>Rôle</td>
-                                        <td>Developpeur/Configurateur</td>
+                                        <td data-lang="project-responsibility">Rôle</td>
+                                        <td data-lang="project-responsibility-dev">Developpeur</td>
                                     </tr>
                                     <tr>
-                                        <td>Langages utilisés</td>
+                                        <td data-lang="project-languages">Langages utilisés</td>
                                         <td>C++, Python</td>
                                     </tr>
                                     <tr>
-                                        <td>Frameworks utilisés</td>
-                                        <td>ROS</td>
+                                        <td data-lang="project-framework">Frameworks utilisés</td>
+                                        <td>ROS (Robot Operating System)</td>
                                     </tr>
                                 </table>
                                 <h3 class="my-4">Description</h3>
                                 <p class="text-justify">
-                                    Projet Scolaire où il fallait configurer le robot ARI<br><br>
-                                    et lui ajouter des fonctionnalités tel que bouger, réagir à son environnement etc...
+                                    <span data-lang="project-ARI-description">Projet Scolaire où il fallait configurer le robot ARI</span>
+                                    <br><br>
+                                    <span data-lang="project-ARI-description-2">lui ajouter des fonctionnalités tel que bouger, réagir à son environnement etc...</span>
                                 </p>
                             </div>
                         </div>
@@ -860,41 +869,38 @@
                                 <hr class="gray my-4">
                             </div>
                             <div class="col-xl-6">
-                                <h3>Informations</h3>
+                                <h3 data-lang="project-information">Informations</h3>
                                 <table class="project-table">
                                     <tr>
-                                        <td>Cadre</td>
-                                        <td>Projet personnel</td>
+                                        <td data-lang="project-context">Cadre</td>
+                                        <td data-lang="project-personal">Projet personnel</td>
                                     </tr>
                                     <tr>
-                                        <td>Date</td>
+                                        <td>Date (dd/mm/aaaa)</td>
                                         <td>15/04/2023 - 16/04/2023</td>
                                     </tr>
                                     <tr>
-                                        <td>Durée</td>
+                                        <td data-lang="project-duration">Durée</td>
                                         <td>~10h</td>
                                     </tr>
                                     <tr>
-                                        <td>Participants au projet</td>
+                                        <td data-lang="project-participants">Participants au projet</td>
                                         <td>1</td>
                                     </tr>
                                     <tr>
-                                        <td>Rôle</td>
-                                        <td>Configurateur</td>
+                                        <td data-lang="project-languages">Langages utilisés</td>
+                                        <td data-lang="project-none">Aucun</td>
                                     </tr>
                                     <tr>
-                                        <td>Langages utilisés</td>
-                                        <td>Aucun</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Frameworks utilisés</td>
-                                        <td>Appli TrueNas</td>
+                                        <td data-lang="project-os">OS / Outils</td>
+                                        <td>TrueNas</td>
                                     </tr>
                                 </table>
                                 <h3 class="my-4">Description</h3>
                                 <p class="text-justify">
-                                    Projet personnel pour découvrir ce qu'est un serveur NAS<br><br>
-                                    Faute de moyens et de matériel, le projet n'a pas abouti.
+                                    <span data-lang="project-Nas-description">Projet personnel pour découvrir ce qu'est un serveur NAS</span>
+                                    <br><br>
+                                    <span data-lang="project-Nas-description-2">Faute de moyens et de matériel, le projet n'a pas abouti.</span>
                                 </p>
                             </div>
                         </div>
@@ -948,41 +954,38 @@
                                 <hr class="gray my-4">
                             </div>
                             <div class="col-xl-6">
-                                <h3>Informations</h3>
+                                <h3 data-lang="project-information">Informations</h3>
                                 <table class="project-table">
                                     <tr>
-                                        <td>Cadre</td>
-                                        <td>Projet personnel</td>
+                                        <td data-lang="project-context">Cadre</td>
+                                        <td data-lang="project-personal">Projet personnel</td>
                                     </tr>
                                     <tr>
-                                        <td>Date</td>
+                                        <td>Date (dd/mm/aaaa)</td>
                                         <td>01/04/2021 - 13/04/2021</td>
                                     </tr>
                                     <tr>
-                                        <td>Durée</td>
+                                        <td data-lang="project-duration">Durée</td>
                                         <td>~70h</td>
                                     </tr>
                                     <tr>
-                                        <td>Participants au projet</td>
+                                        <td data-lang="project-participants">Participants au projet</td>
                                         <td>1</td>
                                     </tr>
                                     <tr>
-                                        <td>Rôle</td>
-                                        <td>Développeur</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Langages utilisés</td>
+                                        <td data-lang="project-languages">Langages utilisés</td>
                                         <td>HTML / CSS / JavaScript / Sass</td>
                                     </tr>
                                     <tr>
-                                        <td>Frameworks utilisés</td>
+                                        <td data-lang="project-framework">Frameworks utilisés</td>
                                         <td>Bootstrap</td>
                                     </tr>
                                 </table>
                                 <h3 class="my-4">Description</h3>
                                 <p class="text-justify">
-                                    Je suis amené dans le cadre de mes études à trouver une alternance. J'ai eu l'idée de réaliser mon portfolio afin de pouvoir détailler plus en détails mes compétences et mes projets réalisés.<br><br>
-                                    La création de mon portfolio m'a permis de mettre en pratique mes cours de (HTML/CSS,JavaScript). Durant la conception de mon portfolio, j'ai travaillé en localhost en utilisant le logiciel MAMP et j'en ai fait un repository github public. Aujourd'hui, mon portfolio est hébergé par netlify, avec netlify j'ai pu construire mon portfolio seulement en mettant à jour mon repository github.
+                                    <span data-lang="project-portfolio-description">Je suis amené dans le cadre de mes études à trouver une alternance. J'ai eu l'idée de réaliser mon portfolio afin de pouvoir détailler plus en détails mes compétences et mes projets réalisés.</span>
+                                    <br><br>
+                                    <span data-lang="project-portfolio-description-2">La création de mon portfolio m'a permis de mettre en pratique mes cours de (HTML/CSS,JavaScript). Durant la conception de mon portfolio, j'ai travaillé en localhost en utilisant le logiciel MAMP et j'en ai fait un repository github public. Aujourd'hui, mon portfolio est hébergé par netlify, avec netlify j'ai pu construire mon portfolio seulement en mettant à jour mon repository github.</span>
                                 </p>
                             </div>
                         </div>
@@ -999,7 +1002,7 @@
         <div class="modal-dialog modal-xl modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Conception d'un appareil de mesures Psychotechnique</h5>
+                    <h5 class="modal-title" data-lang="projects-heartbeat">Conception d'un appareil de mesures Psychotechnique</h5>
                     <button type="button" class="close" data-bs-dismiss="modal"><span aria-hidden="true" class="modal_button">&times;</span><span class="sr-only">Close</span></button>
                 </div>
                 <div class="modal-body">
@@ -1036,37 +1039,38 @@
                                 <hr class="gray my-4">
                             </div>
                             <div class="col-xl-6">
-                                <h3>Informations</h3>
+                                <h3 data-lang="project-information">Informations</h3>
                                 <table class="project-table">
                                     <tr>
-                                        <td>Cadre</td>
-                                        <td>Projet scolaire</td>
+                                        <td data-lang="project-context">Cadre</td>
+                                        <td data-lang="project-school">Projet Scolaire</td>
                                     </tr>
                                     <tr>
-                                        <td>Date</td>
+                                        <td>Date (dd/mm/aaaa)</td>
                                         <td>Octobre 2020 - Juin 2021</td>
                                     </tr>
                                     <tr>
-                                        <td>Durée</td>
+                                        <td data-lang="project-duration">Durée</td>
                                         <td>non fini</td>
                                     </tr>
                                     <tr>
-                                        <td>Participants au projet</td>
+                                        <td data-lang="project-participants">Participants au projet</td>
                                         <td>6</td>
                                     </tr>
                                     <tr>
-                                        <td>Rôle</td>
-                                        <td>Développeur/Concepteur</td>
+                                        <td data-lang="project-responsibility">Rôle</td>
+                                        <td data-lang="project-responsibility-dev">Développeur</td>
                                     </tr>
                                     <tr>
-                                        <td>Technologies utilisés</td>
+                                        <td data-lang="project-languages">Langages utilisés</td>
                                         <td>HTML / CSS / JavaScript / PHP SQL</td>
                                     </tr>
                                 </table>
                                 <h3 class="my-4">Description</h3>
                                 <p class="text-justify">
-                                    La conception de cet objet est issue de l'Apprentissage Par Projet (APP), ce type d'enseignement est particulier à l'ISEP, il occupe une place importante dans l'enseignement des bases de l'informatique, de l'électronique, du traitement du signal et des télécommunications.<br><br>
-                                    Dans le cas de cette année, il faut faire un appareil de mesure psychotechnique ainsi qu'un site web où l'utilisateur pourra voir les données de ces mesures.
+                                    <span data-lang="project-APP-description">La conception de cet objet est issue de l'Apprentissage Par Projet (APP), ce type d'enseignement est particulier à l'ISEP, il occupe une place importante dans l'enseignement des bases de l'informatique, de l'électronique, du traitement du signal et des télécommunications.</span>
+                                    <br><br>
+                                    <span data-lang="project-APP-description-2">Dans le cas de cette année, il faut faire un appareil de mesure psychotechnique ainsi qu'un site web où l'utilisateur pourra voir les données de ces mesures.</span>
                                 </p>
                             </div>
                         </div>
@@ -1083,7 +1087,7 @@
         <div class="modal-dialog modal-xl modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Conception d'un jeu sur Unity</h5>
+                    <h5 class="modal-title" data-lang="projects-unity">Conception d'un jeu sur Unity</h5>
                     <button type="button" class="close" data-bs-dismiss="modal"><span aria-hidden="true" class="modal_button">&times;</span><span class="sr-only">Close</span></button>
                 </div>
                 <div class="modal-body">
@@ -1120,37 +1124,34 @@
                                 <hr class="gray my-4">
                             </div>
                             <div class="col-xl-6">
-                                <h3>Informations</h3>
+                                <h3 data-lang="project-information">Informations</h3>
                                 <table class="project-table">
                                     <tr>
-                                        <td>Cadre</td>
-                                        <td>Projet personnel</td>
+                                        <td data-lang="project-context">Cadre</td>
+                                        <td data-lang="project-personal">Projet personnel</td>
                                     </tr>
                                     <tr>
-                                        <td>Date</td>
-                                        <td>Fevrier 2021 - Mars 2021</td>
+                                        <td>Date (dd/mm/aaaa)</td>
+                                        <td>10/02/2021 - 16/03/2021</td>
                                     </tr>
                                     <tr>
-                                        <td>Durée</td>
+                                        <td data-lang="project-duration">Durée</td>
                                         <td>~40h</td>
                                     </tr>
                                     <tr>
-                                        <td>Participants au projet</td>
+                                        <td data-lang="project-participants">Participants au projet</td>
                                         <td>1</td>
                                     </tr>
                                     <tr>
-                                        <td>Rôle</td>
-                                        <td>Développeur</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Technologies utilisés</td>
+                                        <td data-lang="project-languages">Langages utilisés</td>
                                         <td>Unity / C#</td>
                                     </tr>
                                 </table>
                                 <h3 class="my-4">Description</h3>
                                 <p class="text-justify">
-                                    La conception de ce jeu est une activité de découverte d'unity, de plus cela me permet d'avoir des bases dans l'utilisation de ce logiciel et de connaître quelques fonctions de C# <br><br>
-                                    Ce petit projet personnel vient du fait que je suis membre du Virtual Lab de Garage ISEP, une association qui fait des projets et des activités selon le Lab en question.
+                                    <span data-lang="project-unity-description">La conception de ce jeu est une activité de découverte d'unity, de plus cela me permet d'avoir des bases dans l'utilisation de ce logiciel et de connaître quelques fonctions de C# </span>
+                                    <br><br>
+                                    <span data-lang="project-unity-description-2">Ce petit projet personnel vient du fait que je suis membre du Virtual Lab de Garage ISEP, une association qui fait des projets et des activités selon le Lab en question.</span>
                                 </p>
                             </div>
                         </div>
@@ -1167,7 +1168,7 @@
         <div class="modal-dialog modal-xl modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Programmation d'un jeu de Plateau en JAVA</h5>
+                    <h5 class="modal-title" data-lang="projects-Java">Programmation d'un jeu de Plateau en JAVA</h5>
                     <button type="button" class="close" data-bs-dismiss="modal"><span aria-hidden="true" class="modal_button">&times;</span><span class="sr-only">Close</span></button>
                 </div>
                 <div class="modal-body">
@@ -1182,37 +1183,38 @@
                                 <hr class="gray my-4">
                             </div>
                             <div class="col-xl-6">
-                                <h3>Informations</h3>
+                                <h3 data-lang="project-information">Informations</h3>
                                 <table class="project-table">
                                     <tr>
-                                        <td>Cadre</td>
-                                        <td>Projet scolaire</td>
+                                        <td data-lang="project-context">Cadre</td>
+                                        <td data-lang="project-school">Projet Scolaire</td>
                                     </tr>
                                     <tr>
-                                        <td>Date</td>
-                                        <td>Novembre 2020 - Janvier 2021</td>
+                                        <td>Date (dd/mm/aaaa)</td>
+                                        <td>05/11/2020 - 15/01/2021</td>
                                     </tr>
                                     <tr>
-                                        <td>Durée</td>
+                                        <td data-lang="project-duration">Durée</td>
                                         <td>~80h</td>
                                     </tr>
                                     <tr>
-                                        <td>Participants au projet</td>
+                                        <td data-lang="project-participants">Participants au projet</td>
                                         <td>3</td>
                                     </tr>
                                     <tr>
-                                        <td>Rôle</td>
-                                        <td>Développeur</td>
+                                        <td data-lang="project-responsibility">Rôle</td>
+                                        <td data-lang="project-responsibility-dev">Développeur</td>
                                     </tr>
                                     <tr>
-                                        <td>Technologies utilisés</td>
+                                        <td data-lang="project-languages">Langages utilisés</td>
                                         <td>JAVA</td>
                                     </tr>
                                 </table>
                                 <h3 class="my-4">Description</h3>
                                 <p class="text-justify">
-                                    La conception de ce jeu de plateau est dans le cadre devoir/projet de classe pour l'enseignement en JAVA<br><br>
-                                    Le jeu de plateau en question à programmer est : MrJackPocket
+                                    <span data-lang="project-Java-description">La conception de ce jeu de plateau est dans le cadre devoir/projet de classe pour l'enseignement en JAVA</span>
+                                    <br><br>
+                                    <span data-lang="project-Java-description-2">Le jeu de plateau en question à programmer est : MrJackPocket</span>
                                 </p>
                             </div>
                         </div>
@@ -1229,7 +1231,7 @@
         <div class="modal-dialog modal-xl modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Programmation d'une simulation d'une chute d'un objet</h5>
+                    <h5 class="modal-title" data-lang="projects-fall">Programmation d'une simulation d'une chute d'un objet</h5>
                     <button type="button" class="close" data-bs-dismiss="modal"><span aria-hidden="true" class="modal_button">&times;</span><span class="sr-only">Close</span></button>
                 </div>
                 <div class="modal-body">
@@ -1266,36 +1268,36 @@
                                 <hr class="gray my-4">
                             </div>
                             <div class="col-xl-6">
-                                <h3>Informations</h3>
+                                <h3 data-lang="project-information">Informations</h3>
                                 <table class="project-table">
                                     <tr>
-                                        <td>Cadre</td>
-                                        <td>Projet scolaire</td>
+                                        <td data-lang="project-context">Cadre</td>
+                                        <td data-lang="project-school">Projet Scolaire</td>
                                     </tr>
                                     <tr>
-                                        <td>Date</td>
-                                        <td>Decembre 2020 - Janvier 2021</td>
+                                        <td>Date (dd/mm/aaaa)</td>
+                                        <td>10/12/2020 - 25/01/2021</td>
                                     </tr>
                                     <tr>
-                                        <td>Durée</td>
+                                        <td data-lang="project-duration">Durée</td>
                                         <td>~50h</td>
                                     </tr>
                                     <tr>
-                                        <td>Participants au projet</td>
+                                        <td data-lang="project-participants">Participants au projet</td>
                                         <td>6</td>
                                     </tr>
                                     <tr>
-                                        <td>Rôle</td>
-                                        <td>Développeur</td>
+                                        <td data-lang="project-responsibility">Rôle</td>
+                                        <td data-lang="project-responsibility-dev>Développeur</td>
                                     </tr>
                                     <tr>
-                                        <td>Technologies utilisés</td>
+                                        <td data-lang="project-languages">Langages utilisés</td>
                                         <td>Python</td>
                                     </tr>
                                 </table>
                                 <h3 class="my-4">Description</h3>
                                 <p class="text-justify">
-                                    Le codage de la simulation est un devoir/projets d'analyse de la chute d'un objet dans le vide, l'air et l'eau.
+                                    <span data-lang="project-fall-description">Le codage de la simulation est un devoir/projets d'analyse de la chute d'un objet dans le vide, l'air et l'eau.</span>
                                 </p>
                             </div>
                         </div>
@@ -1349,38 +1351,34 @@
                                 <hr class="gray my-4">
                             </div>
                             <div class="col-xl-6">
-                                <h3>Informations</h3>
+                                <h3 data-lang="project-information">Informations</h3>
                                 <table class="project-table">
                                     <tr>
-                                        <td>Cadre</td>
-                                        <td>Projet scolaire</td>
+                                        <td data-lang="project-context">Cadre</td>
+                                        <td data-lang="project-school">Projet Scolaire</td>
                                     </tr>
                                     <tr>
-                                        <td>Date</td>
-                                        <td>Janvier 2019 - Fevrier 2020</td>
+                                        <td>Date (dd/mm/aaaa)</td>
+                                        <td>15/01/2019 - 20/02/2020</td>
                                     </tr>
                                     <tr>
-                                        <td>Durée</td>
+                                        <td data-lang="project-duration">Durée</td>
                                         <td>>200h</td>
                                     </tr>
                                     <tr>
-                                        <td>Participants au projet</td>
+                                        <td data-lang="project-participants">Participants au projet</td>
                                         <td>2</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Rôle</td>
-                                        <td>Etudiant</td>
                                     </tr>
                                 </table>
                                 <h3 class="my-4">Description</h3>
                                 <p class="text-justify">
-                                    Le TIPE est une étude sur le thème de  l'océan. Cette étude avait pour but une présentation pour les concours CPGE mais cette présentation a été annulée à cause du COVID.
+                                    <span data-lang="project-TIPE-description">Le TIPE est une étude sur le thème de  l'océan. Cette étude avait pour but une présentation pour les concours CPGE mais cette présentation a été annulée à cause du COVID.</span>
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer">
+                <div class="modal-footer"> 
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>

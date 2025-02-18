@@ -11,19 +11,20 @@ window.addEventListener('scroll', function () {
 });
 async function loadTranslations(lang) {
     try {
-        // Charger le fichier JSON de traduction
         const response = await fetch("translations.json");
-        const translations = await response.json();
-
-        // Appliquer les traductions
-        applyTranslations(translations[lang]);
+        if (!response.ok) {
+            throw new Error(`Erreur HTTP ${response.status}: ${response.statusText}`);
+        }
+        const data = await response.json(); // Assure-toi d'appeler .json() !
+        applyTranslations(data[lang]);
     } catch (error) {
-        console.error("Erreur lors du chargement des traductions :", error);
+        console.error("Erreur lors du chargement des traductions :", error.message);
     }
 }
 
+
 function applyTranslations(translations) {
-    // Appliquer les traductions à tous les éléments ayant un attribut data-lang
+    // Appliquer les traductions Ã  tous les Ã©lÃ©ments ayant un attribut data-lang
     document.querySelectorAll("[data-lang]").forEach(el => {
         const key = el.getAttribute("data-lang");
         if (translations[key]) {
@@ -32,13 +33,13 @@ function applyTranslations(translations) {
     });
 }
 
-// Fonction pour changer la langue à partir du bouton
+// Fonction pour changer la langue Ã  partir du bouton
 function changeLanguage(lang) {
     loadTranslations(lang);
     localStorage.setItem("lang", lang); // Sauvegarder la langue dans le localStorage
 }
 
-// Charger la langue par défaut ou la langue sauvegardée
-const userLang = localStorage.getItem("lang") || navigator.language.slice(0, 2) || "fr"; // Par défaut, c'est le français
+// Charger la langue par dÃ©faut ou la langue sauvegardÃ©e
+const userLang = localStorage.getItem("lang") || navigator.language.slice(0, 2) || "fr"; // Par dÃ©faut, c'est le franÃ§ais
 loadTranslations(userLang);
 
